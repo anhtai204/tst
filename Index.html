@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlingLearning</title>
+    <link rel="stylesheet" href="assets/css/Index.css">
+    <link rel="stylesheet" href="assets/css/home-footer.css">
+    <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons.css">
+    <style>
+        .open {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <img id="html-logo" src="assets/img/logo/icon-html-1.png" alt="">
+    <img id="css-logo" src="assets/img/logo/css.png" alt="">
+    <img id="js-logo" src="assets/img/logo/js-file.png" alt="">
+
+
+
+
+    <div id="main">
+        <div id="header">
+            <div class="nav">
+                <div class="logo">
+                    <img src="assets/img/logo2.jpg" alt="Khoa CNTT ĐHSP Hà Nội">
+                    <div class="logo-content">
+                        <h2>KHOA CÔNG NGHỆ THÔNG TIN</h2>
+                        <h3>TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI</h3>
+                    </div>
+                </div>
+                
+                <div class="content-nav">
+                    <li id="course">
+                        <div>
+                            <i class="ti-book"></i>    
+                            <a>Khóa học</a>
+                        </div>
+                        <ul class="sub-course">
+                            <li style="line-height: 34px; margin-left: 20px; margin-top: 5px; font-weight: bold; font-family: sans-serif;">
+                                <p>Khóa học của tôi</p>
+                            </li>
+                            <a href="https://fullstack.edu.vn/courses/html-css">
+                                <li id="sub-course-sector">
+                                    <img src="assets/img/html-course.jpg" alt="">
+                                        <span id="name-course">HTML CSS từ Zero đến Hero</span>
+                                        <span style="text-decoration: underline;" id="start-learn">Bắt đầu học</span>
+                                </li>
+                            </a>
+                            <a href="https://fullstack.edu.vn/courses/javascript-co-ban">
+                                <li id="sub-course-sector">
+                                    <img src="assets/img/js-course.jpg" alt="">
+                                    <span id="name-course">Lập Trình JavaScript Cơ Bản</span>
+                                    <span style="text-decoration: underline;" id="start-learn">Bắt đầu học</span>
+                                </li>
+                            </a>
+                        </ul>
+                    </li>
+                    
+                    <li id="note">
+                        <i class="ti-pencil-alt"></i>
+                        <a href="html/LuyenTap.html">Bộ câu hỏi</a>
+                    </li>
+
+                    <li id="train">
+                        <i class="ti-pencil-alt"></i>
+                        <a href="html/DuyetCauHoi.html">Duyệt câu hỏi</a>
+                    </li>
+
+                    <li id="account">
+                        <div>
+                            <i class="ti-user"></i>
+                            <a>Account</a>
+                        </div>
+                        <ul class="sub-account">
+                            <li id="support">                              
+                                <a><i class="ti-comment-alt"></i><span>&nbsp;Đóng góp ý kiến</span></a>
+                            </li>
+                            <li id="setting">                               
+                                <a href="html/setting.html"><i class="ti-settings"></i><span>&nbsp;Cài đặt</span></a>
+                            </li>
+                            <li id="log-out">
+                                <a onclick="logout()" href="html/DangNhap.html"><i class="ti-power-off"></i><span>&nbsp;Đăng xuất</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+        </div>
+        <script>
+            function logout() {
+                localStorage.setItem("current-account","{}");
+            }
+        </script>
+        
+        <!-- Đóng góp ý kiến -->
+        <div class="contribute-sector">
+            <div class="contribute-ideas">
+                    <div id="ideas-head">
+                        <p>Đóng góp ý kiến</p>
+                        <i class="ti-close"></i>
+                    </div>
+                    <hr>
+        
+                    <div class="ideas-bottom">
+                        <li id="ideas-bt">
+                            <i class="ti-face-smile"></i>
+                            <div>
+                                <p style="font-family: sans-serif; font-weight: bold; font-size: 17px;">Chung tay cải thiện trang web</p>
+                                <p style="font-family: sans-serif; font-size: 14px; color: #8a8c8f;">Đóng góp ý kiến về trải nghiệm sử dụng của bạn</p>
+                            </div>
+                        </li>
+                        
+                        <li id="ideas-bt">
+                            <i class="ti-alert"></i>
+                            <div>
+                                <p style="font-family: sans-serif; font-weight: bold; font-size: 17px;">Đã xảy ra lỗi</p>
+                                <p style="font-family: sans-serif; font-size: 14px; color: #8a8c8f;">Hãy cho chúng tôi biết về tính năng bị lỗi</p>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--  -->
+
+        <!-- Content -->
+        
+        <div class="content">
+            <!-- Content left -->
+            <li id="content-left">
+                <div class="top-content-icon">
+                    <a id="active" href="Index.html"><div class="back-home">
+                        <i class="ti-home"></i>
+                        <p>Trang chủ</p>
+                    </div></a>
+    
+                    <a href="html/LoTrinh.html"><div class="road">
+                        <i class="ti-map"></i>
+                        <p>Lộ trình</p>
+                    </div></a>
+    
+                    <a href="html/BaiViet.html"><div class="notification">
+                        <i class="ti-comment-alt"></i>
+                        <p>Bài Viết</p>
+                    </div></a>
+    
+                    <a href="html/TinTuc.html"><div class="announce">
+                        <i class="ti-announcement"></i>
+                        <p>Tin tức</p>
+                    </div></a>
+                </div>
+
+                <div class="help">
+                    <i class="ti-help-alt"></i>
+                    <a href="#">Help</a>
+                </div>
+            </li>
+
+            <!-- Content-right -->
+            <li id="content-right">
+                <div>
+                    <div class="avt">
+                        <div class="avt1" id="avt-user">
+                            <img src="assets/img/logo/html.gif" alt="">
+                            <p>Nguyễn Anh Tài</p>
+                        </div>
+                        <div class="avt2" id="avt-user">
+                            <img src="assets/img/logo/css.gif" alt="">
+                            <p>Phan Xuân Vinh</p>
+                        </div>
+                    </div>
+                    <div class="about-content">
+                        <ul>
+                            <li id="thongtin" style="background-color: #6E6875; color: #fff;" class="about-content-sector">Thông tin</li>
+                            <li id="khoahoc" class="about-content-sector hide-user">Khóa học</li>
+                            <li id="baitap" class="about-content-sector hide-user">Bài tập</li>
+                            <li id="thicu" class="about-content-sector hide-user">Thi cử</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="in" id="content-user">
+                        <div class="title-content">
+                            <p>Thông tin cá nhân</p>
+                            <i class="ti-angle-right"></i>
+                        </div>
+    
+                        <div class="infor-user">
+                            <div id="avt-user-content">
+                                <img src="assets/img/avt-clone.jpg" alt="">
+                            </div>
+    
+                            <div id="about-user-content">
+                                <div id="sector-user">
+                                    <div>
+                                        <p class="user-infor-sector">Tên:</p>
+                                        <p class="name-js"></p>
+                                    </div>
+                                    <div>
+                                        <p class="user-infor-sector">Ngày sinh:</p>
+                                        <p>**/**/****</p>
+                                    </div>
+                                    <div>
+                                        <p class="user-infor-sector">Khóa:</p>
+                                        <p>K72</p>
+                                    </div>
+                                    <div>
+                                        <p class="user-infor-sector">Khoa:</p>
+                                        <p>Công nghệ thông tin</p>
+                                    </div>
+
+                                    <img src="assets/img/logo/doraemon_1.png" style="height: 170px; position: absolute; top: -28px; right: -300px;" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        document.querySelector(".infor-user #about-user-content .name-js").innerText=`${JSON.parse(localStorage["current-account"]).account}`
+                    </script>
+                    <div class="course-container in">
+                        <div class="title-course">
+                            <p>Khóa học của tôi</p>
+                            <i class="ti-angle-right"></i>
+                        </div>
+                        <div id="course-sector">
+                            <div class="course-img">
+                                <div class="img-container">
+                                    <img src="assets/img/HTML,CSS-01.jpg" alt="">
+                                </div>
+                                <p>Khóa học HTML,CSS</p>
+                            </div>
+                            <div class="course-img">
+                                <div class="img-container">
+                                    <img src="assets/img/JS-NangCao.jpg" alt="">
+                                </div>
+                                <p>Khóa học Javascript</p>
+                            </div>
+                            <div class="course-img">
+                                <div class="img-container">
+                                    <img src="assets/img/react-js.jpg" alt="">
+                                </div>
+                                <p>Khóa học ReactJs</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: none;" class="exercise in">
+                        <div class="title-exercise">
+                            <p>Bài tập</p>
+                            <i class="ti-angle-right"></i>
+                        </div>
+
+                        <div class="exercise-sector">
+                            <div class="baitap1">
+                                <img src="assets/img/cpp-course.jpg" alt=""><br>
+                                <button>Làm bài</button>
+                            </div>
+                        </div>
+
+                        <div class="exercise-sector">
+                            <div class="baitap2">
+                                <img src="assets/img/mongo-course.jpg" alt=""><br>
+                                <button>Làm bài</button>
+                            </div>
+                        </div>
+
+                        <div class="exercise-sector">
+                            <div class="baitap3">
+                                <img src="assets/img/Ubuntu-Linux.jpg" alt=""><br>
+                                <button>Làm bài</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div style="display: none;" class="exam in">
+                        <div class="title-exam">
+                            <p>Bài thi</p>
+                            <i class="ti-angle-right"></i>
+                        </div>
+
+                        <div class="exam-sector">
+                            <div class="exam1">
+                                <img src="assets/img/responsive-course.jpg" alt=""><br>
+                                <button>Vào thi</button>
+                            </div>
+                        </div>
+
+                        <div class="exam-sector">
+                            <div class="exam2">
+                                <img src="assets/img/learn-javascript-courses.jpeg" alt=""><br>
+                                <button>Vào thi</button>
+                            </div>
+                        </div>
+
+                        <div class="exam-sector">
+                            <div class="exam3">
+                                <img src="assets/img/Libraries_andFrameworks.jpg" alt=""><br>
+                                <button>Vào thi</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                
+
+            </li>
+        </div>
+    </div>
+
+
+
+
+    <div class="home-footer">
+        <div class="image">
+            <img src="assets/img/logo2.jpg" alt="">
+        </div>
+        <div class="info">
+            <span>BlingLearning</span><br>
+            <span>Nhóm 12 - NTPTW01 - K72 Nền Tảng Phát Triển Web</span><br>
+            <span>1 Tháng 12, 2023</span>
+        </div>
+        <div class="tag">
+            <span>Khoa Công nghệ thông tin - Trường Đại học Sư phạm Hà Nội 2023</span>
+        </div>
+    </div>
+    <script>
+        
+        if(localStorage.length==0) {
+            // Khởi tạo value cho key cho kho câu hỏi_raw
+            localStorage.setItem("CauHoi1DA","{}");
+            localStorage.setItem("CauHoiNDA","{}");
+            localStorage.setItem("CauHoiDien","{}");
+
+            // Khởi tạo value cho key kiểm tra tài khoản hiện tại
+            localStorage.setItem("current-account","{}");
+
+            //khởi tạo value cho key tài khoản
+            localStorage.setItem("account","{}");
+
+            // Tạo admin
+            let admin_account_0={
+                account: "vinh",
+                password: "vinh123456",
+                email: "vinh@gmail.com",
+                per: "admin"
+            }
+            let admin_account_1={
+                account: "tai",
+                password: "tai123456",
+                email: "tai@gmail.com",
+                per: "admin"
+            }
+            let inner_account = JSON.parse(localStorage["account"]); // object
+            inner_account[`user_${Object.keys(inner_account).length}`]=JSON.stringify(admin_account_0);
+            inner_account[`user_${Object.keys(inner_account).length}`]=JSON.stringify(admin_account_1);
+           localStorage.setItem("account",JSON.stringify(inner_account));
+        }
+
+        // Check có tài khoản đăng nhập hay chưa
+        if(localStorage["current-account"]=="{}") {
+            alert("Bạn chưa đăng nhập vào trang web, hãy đăng nhập!");
+            location.assign("html/DangNhap.html");        
+        }
+
+        // Account sub
+        const sub_account = document.querySelector('.sub-account');
+        const user_avt = document.querySelector('#account > div');
+
+
+        function showAccount() {
+            if(sub_course.classList.contains('open')) {
+                sub_course.classList.remove('open')
+            }
+            sub_account.classList.toggle('open');
+        }
+
+        user_avt.addEventListener('click', showAccount)
+
+
+
+        // Course sub
+        const sub_course = document.querySelector('.sub-course');
+        const course_avt = document.querySelector('#course > div');
+
+
+        function showCourse() {
+            if(sub_account.classList.contains('open')) {
+                sub_account.classList.remove('open')
+            }
+            sub_course.classList.toggle('open');
+        }
+        
+        course_avt.addEventListener('click', showCourse)
+
+        // Contribute ideas
+        
+        const show_ideas = document.querySelector('.sub-account #support');
+        const sub_ideas = document.querySelector('.contribute-ideas');
+        const sub_ideas_sector = document.querySelector('.contribute-sector')
+        const ideas_avt = document.querySelector('#ideas-head .ti-close');
+
+        function showContribute() {
+            if(sub_account.classList.contains('open')) {
+                sub_account.classList.remove('open')
+            }
+            sub_ideas.classList.add('open');
+            sub_ideas_sector.classList.add('open')
+        }
+
+        function hideContribute() {
+            sub_ideas.classList.remove('open')
+            sub_ideas_sector.classList.remove('open')
+        }
+
+        show_ideas.addEventListener('click', showContribute);
+        ideas_avt.addEventListener('click', hideContribute);
+
+        sub_ideas_sector.addEventListener('click', hideContribute)
+        // ngăn chặn nổi bọt
+        sub_ideas.addEventListener('click', function(e) {
+            e.stopPropagation();
+        })
+
+
+        // About-content
+        var aboutElements = document.querySelectorAll('.about-content-sector');
+        aboutElements.forEach(function(item) {
+            item.addEventListener('click', function(){
+                aboutElements.forEach(function(li) {
+                    li.style.backgroundColor = '';
+                    li.style.color = '';
+                });
+                this.style.backgroundColor = '#6E6875';
+                this.style.color = '#fff'
+            })
+        })
+
+        // About content show
+        var aboutUser = document.querySelector('.about-content-sector:nth-child(1)')
+        var inforUser = document.querySelector('#content-user');
+        var hideUser = document.querySelectorAll('.hide-user');
+
+
+        aboutUser.onclick = function(){
+            document.querySelector(".course-container").style.display = "none"
+            document.querySelector(".exam").style.display = "none"
+            document.querySelector(".exercise").style.display = "none"
+            inforUser.style.display = 'block'
+
+        }
+
+        document.querySelector('.about-content-sector:nth-child(2)').onclick = function() {
+            inforUser.style.display = "none"
+            document.querySelector(".course-container").style.display = "block";
+            document.querySelector(".exam").style.display = "none"
+            document.querySelector(".exercise").style.display = "none"
+
+        }
+
+        document.querySelector(".about-content-sector:nth-child(3)").onclick = function() {
+            inforUser.style.display = 'none'
+            document.querySelector(".course-container").style.display = "none";
+            document.querySelector(".exam").style.display = "none"
+            document.querySelector(".exercise").style.display = "block"
+        }
+
+        document.querySelector(".about-content-sector:nth-child(4)").onclick = function() {
+            inforUser.style.display = 'none'
+            document.querySelector(".course-container").style.display = "none";
+            document.querySelector(".exercise").style.display = "none"
+            document.querySelector(".exam").style.display = "block"
+
+        }
+
+    </script>
+</body>
+</html>
